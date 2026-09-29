@@ -8,7 +8,6 @@
     <body>
 <?php
 
-    // hier komt alle PHP-code
 
 ?>
     </body>
