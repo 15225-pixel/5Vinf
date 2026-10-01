@@ -7,6 +7,18 @@
     </head>
     <body>
         <h1>meest gestreamde nummer op Spotify</h1>
+        <style>
+        table {
+            border-collapse; collapse;
+        }
+            td,th {
+                border: 2px solid;
+                border-color: rgba(5, 18, 41, 0.44);
+                padding: 10px;
+
+            }
+
+        </style>
 <?php
 
     $nummer = array( "titel"       => "Blinding Lights"
@@ -17,5 +29,28 @@
                    );
 
 ?>
+<table>
+<tr>
+    <td>titel:</td>
+    <td>Blinding Lights</td>
+</tr>
+<tr>
+    <td>Artiest:</td>
+    <td>The Weeknd</td>
+</tr>
+<tr>
+    <td>Album:</td>
+    <td>After hours</td>
+</tr>
+<tr>
+    <td>duur:</td>
+    <td>3:22</td>
+</tr>
+<tr>
+    <td>afbeelding:</td>
+    <td><img src="../afbeeldingen/blinding-lights.png" alt="blinding-lights" id="blinding-lights" /><</td>
+</tr>
+<table>
+
     </body>
 </html>
