@@ -26,7 +26,10 @@
         <td rowspan="3"><p><?= $film["notering"] ?></p></td>
         <td class="afbeelding" rowspan="3"><a class="nummer"> </a><img src="films/<?= $film["image"] ?>" /></td>
         <td><h1><?= $film["titel"] ?> (<?= $film["jaar"] ?>)</h1></td>
-        <td><h2><?= $film["genre"] ?></h2></td>
+        <td><h2><?= $film["genre"] ?></td></h2>
+        <td><h2><?php if ($film['nieuw'] == true) { ?>
+                                    <span class="tag-nieuw">Nieuw!</span>
+                                <?php } ?> </td> </h2>
     </tr>
     <tr>
             <td colspan="4"><p><?= $film["synopsis"] ?></p></td>
@@ -39,10 +42,10 @@
         <td><p><?= $film["duur"]?> minuten</p></td>
         <td><p>leeftijd: <?= $film["leeftijd"] ?></p></td>
         
-        <ul><?php foreach ($film["ratings"] as $bron => $rating): ?>
+        <td><?php foreach ($film["ratings"] as $bron => $rating): ?>
        <li><?=$bron?>: <?=$rating?></li>
        <?php endforeach; ?>
-    </ul>
+        </td>
     </tr>
 
 
